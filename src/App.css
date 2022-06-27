@@ -1,38 +1,37 @@
-.App {
+.number {
+  font-size: 75px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* always show arrow buttons on value textbox */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+    
+    -webkit-appearance: "Always Show Up/Down Arrows";
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.itemDataContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tableheader {
+  font-size: medium;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#itemvalue {
+  padding-left: 30px;
+}
+
+.groupheader {
+  font-weight: bold;
+}
+
+.icontrash {
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
